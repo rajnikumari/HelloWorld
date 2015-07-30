@@ -1,7 +1,10 @@
 @(message: String)
 
 @main("Welcome to Play") {
-
-    @play20.welcome(message)
-
+    <!--@message-->
+    <!--@play20.welcome(message)-->
+    <form action="@routes.Application.addPerson()" method="post">
+        <input name="name" type="text">
+        <button>Add Person</button>
+    </form>
 }
